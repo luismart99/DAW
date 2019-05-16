@@ -14,9 +14,26 @@
         
     <h1>Configurar de interior</h1>
     
-    <form method="post" action="configurador">
-     
+    <form method="get" action="configurador">
+        <br>
+        <br>
+        Tapicería
+        <select>
+            
+            <option value="cuero-Alcántara" selected="selected">cuero-Alcántara</option>
+            <option value="cuero Milano">cuero Milano</option>
+            <option value=""></option>
+            <
+            
+        </select>
         
+        Material de las molduras
+          <select>
+            
+            <option value="Carbono blanco">Carbono blanco</option>
+            <option value="Carbono">Carbono</option>
+      
+        </select>
     </head>
     <body>
         
