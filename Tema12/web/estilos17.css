@@ -15,3 +15,19 @@ body{
     
     
 }
+
+h1{
+    
+    font-family: AudiTypeExtended,sans-serif;
+    text-align: justify;
+    padding-left: 45px;
+}
+
+h4{
+    
+    font-family: AudiTypeExtended,sans-serif;
+    text-align: justify;
+    padding-left: 120px;
+    
+    
+}
