@@ -1,6 +1,6 @@
 <%-- 
-    Document   : ejercicio13
-    Created on : 16-may-2019, 16:04:51
+    Document   : ejercicio16
+    Created on : 16-may-2019, 17:27:59
     Author     : Luis
 --%>
 
@@ -9,10 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Tirada de dados</title>
     </head>
     <body>
         
-        
+        Tirada de 3 dados
+        <form metho="post" action="tirada.jsp">
+          <input
     </body>
 </html>
