@@ -15,12 +15,12 @@
     <body>
       <h2>
         <%
-          double c = Double.parseDouble(request.getParameter("cantidad"));
-          DecimalFormat formatoEuros = new DecimalFormat("0.00");
+          double cantidad = Double.parseDouble(request.getParameter("cantidad"));
+  
           if (request.getParameter("cambio").equals("eurosapesetas")) {
-            out.print(formatoEuros.format(c) + Math.round(c * 166.386) + " pesetas.");
+            out.print(Math.round(cantidad * 166.386) + " pesetas.");
           } else {
-            out.print(Math.round(c) +  formatoEuros.format(c / 166.386) + " euros.");
+            out.print(Math.round(cantidad / 166.386) + " euros.");
           }
         %>
     </body>

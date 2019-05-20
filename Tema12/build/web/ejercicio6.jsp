@@ -14,7 +14,7 @@
     <body>
         <form method="post" action="conversorpesetaseuros.jsp"/>
       Introduzca la cantidad de pesetas que quiera convertir a euros:
-      <input  type = " number "  min = " 0 "  step = " 0.01 "  name = "pesetas" />
+      <input  type = " number "  min = " 0 "  step = " 0.01 "  name = "pesetas"  />
       <input type="submit" value="Convertir"/>
     </body>
 </html>
