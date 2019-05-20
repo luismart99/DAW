@@ -1,9 +1,11 @@
+package AgendaContactos;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AgendaContactos;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -60,6 +62,25 @@ public class Agenda {
         }
     }
     
+    public void eliminarContacto(String nombre) {
+ 
+        boolean encontrado = false;
+        for (int i = 0; i < agenda.length && !encontrado; i++) {
+            if (agenda[i] != null && agenda[i].equals(nombre)) {
+                agenda[i] = null; 
+                encontrado = true; 
+            }
+        }
+ 
+        if (encontrado) {
+            System.out.println("Se ha eliminado el contacto");
+        } else {
+            System.out.println("No se ha eliminado el contacto");
+ 
+        }
+ 
+    }
+    
     
     public void desdeFichero() throws Exception{
         
@@ -109,4 +130,5 @@ public class Agenda {
             System.out.println(ex.getMessage());
         }
     }
+    
 }

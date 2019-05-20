@@ -1,9 +1,11 @@
+package AgendaContactos;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AgendaContactos;
+
 
 import java.util.Scanner;
 
@@ -21,11 +23,12 @@ public class Main {
         Scanner S = new Scanner(System.in);
         
         
-        int tamAgenda = (int) (Math.random() * 15) +1;
+       int tamAgenda = 20;
         
         Agenda agenda;
         int opcion = 0;
         String nombre, telefono;
+        int contador = 0;
         
         agenda = new Agenda(tamAgenda);
         
@@ -35,7 +38,7 @@ public class Main {
             
             System.out.println("AGENDA TELEFONICA");
             System.out.println("================");
-            System.out.println("1. Nuevo Contacto");
+            System.out.println("1. Nuevo contacto");
             System.out.println("2. Buscar por nombre");
             System.out.println("3. Mostrar todos");
             System.out.println("4. Salir");
@@ -46,15 +49,19 @@ public class Main {
                 
                 case 1:
                     
+                    System.out.println("Tamaño de la agenda para "+tamAgenda+" contactos");
                     if(agenda.agendaLlena() == true){
                         System.out.println("La agenda está llena");
                     } else {
-                        System.out.println("Nombre: ");
+                        System.out.print("Nombre: ");
                         nombre = T.nextLine();
-                        System.out.println("Teléfono: ");
+                        System.out.print("Teléfono: ");
                         telefono = T.nextLine();
                         agenda.nuevoContacto(nombre, telefono);
+                        tamAgenda--;
                     }
+                    
+                    
                     
                     
                     break;
@@ -62,7 +69,7 @@ public class Main {
                 case 2:
                     
                     System.out.println("Buscar: ");
-                    nombre = S.nextLine();
+                    nombre = T.nextLine();
                     agenda.buscaNombre(nombre);
                     
                     

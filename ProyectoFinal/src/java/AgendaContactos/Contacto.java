@@ -1,9 +1,11 @@
+package AgendaContactos;
+
 /*
  * La clase contacto almacenará información de una persona: nombre y teléfono
  * Pondremos final a los atributos, para una vez que estén creados no se modifiquen 
  *  los datos.
  */
-package AgendaContactos;
+
 
 import java.util.Objects;
 
