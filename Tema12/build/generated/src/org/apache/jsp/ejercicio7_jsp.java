@@ -47,19 +47,17 @@ public final class ejercicio7_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
-      out.write("         <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"estilos7.css\">\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
       out.write("        <title>Conversor</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1> Introduzca el valor de la moneda <h1/>\n");
       out.write("        <form method=\"post\" action=\"conversor.jsp\"/>\n");
-      out.write("        <input  type = \" number \"  min = \" 0 \"  step = \" 0.01 \"  name = \"valor\" />\n");
-      out.write("            <h2>EUROS A PESETAS</h2>\n");
-      out.write("             <input type=\"submit\" value=\"Convertir\" name=\"euros\"/>\n");
-      out.write("            <h2>PESETAS A EUROS</h2>\n");
-      out.write("             <input type=\"submit\" value=\"Convertir\" name=\"pesetas\"/>\n");
-      out.write("          \n");
+      out.write("           <h1>conversor de moneda</h1>\n");
+      out.write("      cantidad</br><input type=\"number\" min=\"0\" step=\"0.01\" name=\"cantidad\"></br></br>\n");
+      out.write("      <input type=\"radio\" name=\"cambio\" value=\"eurosapesetas\" checked=\"checked\"> EUROS A PESETAS</br></br>\n");
+      out.write("      <input type=\"radio\" name=\"cambio\" value=\"pesetasaeuros\"> PESETAS A EUROS</br></br>\n");
+      out.write("      <input type=\"submit\" value=\"Convertir\">\n");
+      out.write("    </form>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
