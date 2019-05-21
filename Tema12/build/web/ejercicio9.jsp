@@ -9,16 +9,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilos9.css">
+        <link rel="stylesheet" type="text/css" href="estilospiramide.css">
         <title>Pirámide</title>
-    </head>>
+    </head>
     <body>
         <h1>Pirámide</h1>
         <form method="get" action="pintar.jsp">
-         Introduzca la cantidad de filas:
+            <h3>Introduzca la cantidad de filas:</h3>
          <br>
-         <input type="number" min="1" max="30" name="altura">
+         <div>  <input type="number" min="1" max="10" name="altura"> </div>
          <br>
-         <input type="submit" value="Crear pirámide"
+         <div><input type="submit" value="Crear pirámide"></div>
+        </form>
     </body>
 </html>

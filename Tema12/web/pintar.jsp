@@ -9,38 +9,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="estilos9.css" rel="stylesheet" type="text/css" />
+        <link href="estilospiramide.css" rel="stylesheet" type="text/css" />
         <title>JSP Page</title>
     </head>
     <body>
         <%
-      int altura = Integer.parseInt(request.getParameter("altura"));
-      
-      int planta = 1;
-      int longitud = 1;
-      int espacios = altura - 1;
-      
-      while(planta <= altura){
-          
-          for (int i = 1; i < espacios; i++) {
-                   out.print("<img src=\"blanco.jpg\">");
-                  
-              }
-          
-          for (int j = 0; j < longitud; j++) {
-                  out.print("<img src=\"b.png\">");
-                  
-              }
-          
-          out.println("</br>");
-         
-          planta++;
-          espacios--;
-          longitud += 2;
-          
-      }
-      
+      int alturaTotal = Integer.parseInt(request.getParameter("altura"));
+      int altura = 1;
+      int i = 0;
+      int espacios = alturaTotal - 1;
+            while (altura <= alturaTotal) {
 
+              for (i = 1; i <= espacios; i++) {
+                out.print("<img src=\"blanco.jpg\">");
+              }
+
+              for (i = 1; i < altura * 2; i++) {
+                out.print("<img src=\"b.png\">");
+              }
+              out.println("</br>");
+              altura++;
+              espacios--;
+      } 
      %>
     </body>
 </html>

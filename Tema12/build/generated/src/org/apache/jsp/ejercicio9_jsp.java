@@ -48,7 +48,7 @@ public final class ejercicio9_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"estilos9.css\">\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"estilospiramide.css\">\n");
       out.write("        <title>Pirámide</title>\n");
       out.write("    </head>>\n");
       out.write("    <body>\n");

@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class ejercicio17_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ejercicio18_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -45,34 +45,29 @@ public final class ejercicio17_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
-      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("    <title>i30 N</title>\n");
-      out.write("    <link href=\"estilos17.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>El Trile</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("    <title>El Trile</title>\n");
+      out.write("    <link href=\"estilos18.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
       out.write("  </head>\n");
       out.write("  <body>\n");
-      out.write("    <h1>Configurador de i30N</h1>\n");
-      out.write("    <form method=\"get\" action=\"configurador.jsp\">\n");
-      out.write("        <h3>Color del coche</h3>\n");
-      out.write("          <div> <select name=\"color\">\n");
-      out.write("        <option value=\"black\">Phanton Black</option>\n");
-      out.write("        <option value=\"grey\">Micron Grey</option>\n");
-      out.write("        <option value=\"blue\" selected=\"selected\">Perfomance Blue</option>\n");
-      out.write("        <option value=\"red\">Engine Red</option>\n");
-      out.write("        <option value=\"white\">Polar White</option>\n");
-      out.write("      </select>\n");
-      out.write("         </div>\n");
-      out.write("\n");
-      out.write("      <br>\n");
-      out.write("      <br>\n");
-      out.write("      <h3>Interior</h3>\n");
-      out.write("      <select name=\"Interior\">\n");
-      out.write("        <option value=\"tela\" selected=\"selected\">Tela negra</option>\n");
-      out.write("        <option value=\"cuero\">Tela y Cuero Negrol</option>\n");
-      out.write("      </select>\n");
-      out.write("      <br>\n");
-      out.write("      <br>\n");
-      out.write("      <input type=\"submit\" value=\"Finalizar\">\n");
-      out.write("    </form>");
+      out.write("    <h1>El Trile</h1>\n");
+      out.write("    <form method=\"post\" action=\"18.jsp\">\n");
+      out.write("        <div> <tr>\n");
+      out.write("        <td><a href=\"resultado.jsp?vaso=0\"><img src=\"vaso.png\"</a></td>\n");
+      out.write("        <td><a href=\"resultado.jsp?vaso=1\"><img src=\"vaso.png\"</a></td>\n");
+      out.write("        <td><a href=\"resultado.jsp?vaso=2\"><img src=\"vaso.png\"</a></td>\n");
+      out.write("      </tr>\n");
+      out.write("        </table>\n");
+      out.write("        </div>\n");
+      out.write("    </form>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
