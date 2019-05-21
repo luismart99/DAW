@@ -23,7 +23,7 @@
       while(planta <= altura){
           
           for (int i = 1; i < espacios; i++) {
-                   out.print(" ");
+                   out.print("<img src=\"blanco.jpg\">");
                   
               }
           

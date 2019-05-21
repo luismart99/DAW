@@ -1,6 +1,6 @@
 <%-- 
     Document   : ejercicio9
-    Created on : 15-may-2019, 12:28:51
+    Created on : 21-may-2019, 16:25:01
     Author     : Luis
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="estilos9.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="estilos9.css">
         <title>Pirámide</title>
-    </head>
+    </head>>
     <body>
         <h1>Pirámide</h1>
         <form method="get" action="pintar.jsp">

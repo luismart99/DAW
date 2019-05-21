@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class fibonacci_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ejercicio9_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -48,40 +48,17 @@ public final class fibonacci_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
+      out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"estilos9.css\">\n");
+      out.write("        <title>Pirámide</title>\n");
+      out.write("    </head>>\n");
       out.write("    <body>\n");
-      out.write("\n");
-      out.write("        ");
-
-                 int f1= 0;
-                 int f2= 1;
-                 int aux;
-                int n = Integer.parseInt(request.getParameter("n"));
-        
-	switch(n) {
-	  case 1:
-	  out.print("0");
-	  break;
-			
-                case 2:
-	  out.print("0 1");
-	  break;
-			
-                default:
-	 out.print("0 1");
-                
-	   while (n>2) {
-		aux = f1;
-		f1 = f2;
-		f2 = aux + f2;
-		out.print(" " + f2);
-		n--;
-                             }				 
-	     }
-
-            
-      out.write("\n");
+      out.write("        <h1>Pirámide</h1>\n");
+      out.write("        <form method=\"get\" action=\"pintar.jsp\">\n");
+      out.write("         Introduzca la cantidad de filas:\n");
+      out.write("         <br>\n");
+      out.write("         <input type=\"number\" min=\"1\" max=\"30\" name=\"altura\">\n");
+      out.write("         <br>\n");
+      out.write("         <input type=\"submit\" value=\"Crear pirámide\"\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
